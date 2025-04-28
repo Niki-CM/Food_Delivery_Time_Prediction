@@ -33,9 +33,11 @@ To run this project, you need the following libraries:
 - seaborn
 - pickle
 
-## 2.  **Run the Complete Pipeline:** The entire data analysis and model training process is included in a single file (food_delivery_time_prediction.py). This file performs the following tasks:
+## 2.  **Run the Complete Pipeline:** 
+-The entire data analysis and model training process is included in a single file (food_delivery_time_prediction.py). This file performs the following tasks:
 
-## **Libraries and Imports:** All required libraries such as ** pandas** , **numpy**, **matplotlib**, **seaborn**, and **machine learning models** from **sklearn** and **xgboost** are imported at the beginning of the script.
+## **Libraries and Imports:** 
+-All required libraries such as ** pandas** , **numpy**, **matplotlib**, **seaborn**, and **machine learning models** from **sklearn** and **xgboost** are imported at the beginning of the script.
 
 ## **Exploratory Data Analysis (EDA):**
 
