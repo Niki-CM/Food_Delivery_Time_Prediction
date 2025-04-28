@@ -16,9 +16,11 @@ This project aims to predict the **delivery time of food** using machine learnin
     - Decision Tree Regressor
     - K-Nearest Neighbors (KNN)
     - Lasso, Ridge, and ElasticNet
+ 
+##  Usage
 
 
-## Installation
+## 1.  Installation
 
 To run this project, you need the following libraries:
 
@@ -35,3 +37,45 @@ You can install the necessary packages by running:
 
 ```bash
 pip install -r requirements.txt
+
+2. ## **Run the Complete Pipeline:** The entire data analysis and model training process is included in a single file (food_delivery_time_prediction.py). This file performs the following tasks:
+
+## **Libraries and Imports:** All required libraries such as ** pandas** , **numpy**, **matplotlib**, **seaborn**, and **machine learning models** from **sklearn** and **xgboost** are imported at the beginning of the script.
+
+## **Exploratory Data Analysis (EDA):**
+
+* Statistical summaries of the dataset.
+
+* Visualizations to analyze feature distributions and relationships (e.g., histograms, box plots).
+
+## **Data Preprocessing:**
+
+* Cleaning the data by handling missing values and encoding categorical features.
+
+* Feature scaling for numerical columns and splitting the dataset into training and testing sets.
+
+## **Handling Outliers:**
+
+- Identifying and handling outliers using techniques like Z-score or IQR (Interquartile Range).
+
+## **Model Training:**
+
+- Training multiple machine learning models: Linear Regression, Random Forest, XGBoost, Decision Trees, SVR, KNN, Lasso, Ridge, and ElasticNet.
+
+- Evaluation of models using metrics like MAE, MSE, RMSE, and R² score.
+
+## **Model Selection:**
+
+- The model with the best performance (lowest MAE) is saved for future use.
+
+## **Testing on New Data:**
+
+- The trained model is used to predict delivery times on new data. An example of this process is included in the script.
+- **The script will:**
+* Perform EDA, data cleaning, and preprocessing.
+* Train and evaluate models.
+* Save the best-performing model to a file (best_model.pkl).
+* Predict delivery time for new data points based on user input.
+
+3. ## **Model Prediction Example:** After the model is trained, you can test it with new data points. Here's an example of how you can use the saved model for predictions:
+
