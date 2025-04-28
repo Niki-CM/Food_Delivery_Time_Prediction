@@ -74,5 +74,33 @@ To run this project, you need the following libraries:
 * Save the best-performing model to a file (best_model.pkl).
 * Predict delivery time for new data points based on user input.
 
-## 3. **Model Prediction Example:** After the model is trained, you can test it with new data points. Here's an example of how you can use the saved model for predictions:
+## 3. **Model Prediction Example:** 
+- After the model is trained, you can test it with new data points. Here's an example of how you can use the saved model for predictions:
+
+import pickle
+import pandas as pd
+
+# Load the saved model
+with open('best_model.pkl', 'rb') as file:
+    model = pickle.load(file)
+
+# Define new data (input your data in the correct format)
+new_data = {
+    'Distance_km': [5],
+    'Preparation_Time_min': [12],
+    'Courier_Experience_yrs': [4.0],
+    'Weather_Foggy': [0],
+    'Weather_Rainy': [1],
+    # Add other features as required
+}
+new_df = pd.DataFrame(new_data)
+
+# Predict delivery time
+prediction = model.predict(new_df)
+print("Estimated Delivery Time:", prediction[0])
+
+## **Example README snippet for Usage section:**
+ 1. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
 
