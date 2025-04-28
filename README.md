@@ -33,12 +33,7 @@ To run this project, you need the following libraries:
 - seaborn
 - pickle
 
-You can install the necessary packages by running:
-
-```bash
-pip install -r requirements.txt
-
-2. ## **Run the Complete Pipeline:** The entire data analysis and model training process is included in a single file (food_delivery_time_prediction.py). This file performs the following tasks:
+## 2.  **Run the Complete Pipeline:** The entire data analysis and model training process is included in a single file (food_delivery_time_prediction.py). This file performs the following tasks:
 
 ## **Libraries and Imports:** All required libraries such as ** pandas** , **numpy**, **matplotlib**, **seaborn**, and **machine learning models** from **sklearn** and **xgboost** are imported at the beginning of the script.
 
@@ -77,5 +72,5 @@ pip install -r requirements.txt
 * Save the best-performing model to a file (best_model.pkl).
 * Predict delivery time for new data points based on user input.
 
-3. ## **Model Prediction Example:** After the model is trained, you can test it with new data points. Here's an example of how you can use the saved model for predictions:
+## 3. **Model Prediction Example:** After the model is trained, you can test it with new data points. Here's an example of how you can use the saved model for predictions:
 
